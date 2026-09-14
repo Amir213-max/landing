@@ -34,75 +34,111 @@
       <!-- Navigation Links -->
       <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-700">
         <a href="#hero" class="hover:text-[#0B1E48] transition-colors">الرئيسية</a>
+        <a href="#form-section" class="hover:text-[#0B1E48] transition-colors">طلب عرض سعر</a>
         <a href="#services" class="hover:text-[#0B1E48] transition-colors">خدماتنا</a>
         <a href="#about" class="hover:text-[#0B1E48] transition-colors">عن الشركة</a>
-        <a href="#form-section" class="hover:text-[#0B1E48] transition-colors">طلب عرض سعر</a>
       </nav>
 
       <!-- Action Button -->
       <div class="flex items-center gap-4">
-        <a href="#form-section" class="bg-[#0B1E48] hover:bg-[#06112C] text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-md hover:shadow-lg">
-          احصل على عرض سعر
+        <a href="https://wa.me/966552035710" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-md flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          تواصل واتساب
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="relative bg-gradient-to-b from-slate-100 to-slate-50 py-16 md:py-24 border-b border-slate-200 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+  <!-- Hero Section with Contact Form in Beginning -->
+  <section id="hero" class="relative bg-gradient-to-b from-slate-100 to-slate-50 py-12 md:py-16 border-b border-slate-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="lg:col-span-7 space-y-6 text-right">
+      <!-- Company Welcome Banner -->
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-4">
         <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-[#0B1E48] px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold">
-          <i class="fa-solid fa-award text-yellow-500"></i> الجودة والابتكار في الخدمات الصناعية
+          <i class="fa-solid fa-award text-yellow-500"></i> شركة العصر الصناعي - جودة وابتكار
         </div>
-        
-        <h1 class="text-3xl sm:text-5xl font-black text-[#0B1E48] leading-tight">
-          شركة <span class="text-blue-700">العصر الصناعي</span> <br>
-          حلول صناعية متكاملة بأعلى معايير الجودة
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1E48] leading-tight">
+          أهلاً بكم في شركة <span class="text-blue-700">العصر الصناعي</span>
         </h1>
-        
-        <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
-          نقدم أحدث الحلول والمنتجات الصناعية المتطورة مع التزام تام بالدقة والسرعة. تواصل معنا الآن واحصل على زيارة مجانية لرفع المقاسات وعرض سعر مخصص لمشروعك.
+        <p class="text-slate-600 text-base sm:text-lg">
+          نقدم أفضل الحلول الصناعية المتكاملة بأعلى معايير الدقة والاحترافية.
         </p>
-
-        <div class="flex flex-wrap gap-4 pt-4">
-          <a href="#form-section" class="bg-[#0B1E48] hover:bg-[#06112C] text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all shadow-lg hover:shadow-xl flex items-center gap-3">
-            <i class="fa-solid fa-clipboard-list"></i>
-            اطلب عرض السعر الآن
-          </a>
-          <a href="https://wa.me/201000000000" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3.5 rounded-xl font-bold text-base transition-all shadow-lg flex items-center gap-3">
-            <i class="fa-brands fa-whatsapp text-xl"></i>
-            محادثة واتساب مباشرة
-          </a>
-        </div>
-
-        <!-- Features Badges -->
-        <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200/80 max-w-xl">
-          <div class="text-center md:text-right">
-            <p class="text-2xl font-extrabold text-[#0B1E48]">100%</p>
-            <p class="text-xs text-slate-500 font-semibold">ضمان الجودة</p>
-          </div>
-          <div class="text-center md:text-right">
-            <p class="text-2xl font-extrabold text-[#0B1E48]">مجاناً</p>
-            <p class="text-xs text-slate-500 font-semibold">زيارة رفع المقاسات</p>
-          </div>
-          <div class="text-center md:text-right">
-            <p class="text-2xl font-extrabold text-[#0B1E48]">24/7</p>
-            <p class="text-xs text-slate-500 font-semibold">دعم واستشارات</p>
-          </div>
-        </div>
-
       </div>
 
-      <div class="lg:col-span-5 flex justify-center">
-        <div class="relative w-full max-w-md bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex flex-col items-center">
-          <img src="assets/images/logo.png" alt="العصر الصناعي" class="h-28 w-auto mb-6 object-contain">
-          <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 w-full text-center space-y-3">
-            <i class="fa-solid fa-truck-ramp-box text-3xl text-[#0B1E48]"></i>
-            <h3 class="font-bold text-slate-800 text-lg">خدمات صناعية متكاملة</h3>
-            <p class="text-xs text-slate-500 leading-relaxed">خبرة واسعة في تنفيذ وتسليم المشاريع الصناعية بدقة واحترافية.</p>
+      <!-- FORM SECTION (AT THE BEGINNING OF THE PAGE) -->
+      <div id="form-section" class="form-section-bg p-6 sm:p-10 rounded-3xl shadow-xl border border-slate-300 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Right Side: Headline Text -->
+          <div class="lg:col-span-6 space-y-4 text-right">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E48] leading-snug">
+              سجل بياناتك واحصل على عرض سعر مجانى وزيارة لرفع المقاسات مجانا
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed pt-2">
+              قم بتعبئة النموذج وسيقوم فريقنا المتخصص بالتواصل معك فوراً لتحديد موعد الزيارة المجانية وتقديم أفضل عروض الأسعار.
+            </p>
+
+            <div class="pt-4 flex items-center gap-4">
+              <a href="https://wa.me/966552035710" target="_blank" class="inline-flex items-center gap-2 text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-4 py-2 rounded-xl text-sm hover:bg-emerald-100 transition-colors">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                أو تواصل معنا مباشرة عبر الواتساب: 966552035710+
+              </a>
+            </div>
           </div>
+
+          <!-- Left Side: Form Controls -->
+          <div class="lg:col-span-6">
+            <form id="contactForm" class="space-y-4">
+              
+              <!-- Input 1: Name -->
+              <div>
+                <input type="text" id="nameInput" placeholder="الاسم" class="custom-input" required>
+              </div>
+
+              <!-- Input 2: Email -->
+              <div>
+                <input type="email" id="emailInput" placeholder="البريد" class="custom-input">
+              </div>
+
+              <!-- Input 3: Phone -->
+              <div>
+                <input type="tel" id="phoneInput" placeholder="الهاتف" class="custom-input" required>
+              </div>
+
+              <!-- Radio Options: Request Type -->
+              <div class="py-2 flex flex-wrap items-center gap-6 text-sm sm:text-base font-semibold text-slate-700">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="request_type" value="استفسارات الأعمال" class="custom-radio">
+                  <span>استفسارات الأعمال</span>
+                </label>
+
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="request_type" value="عرض سعر" class="custom-radio" checked>
+                  <span>عرض سعر</span>
+                </label>
+
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="request_type" value="توظيف" class="custom-radio">
+                  <span>توظيف</span>
+                </label>
+              </div>
+
+              <!-- Textarea: Message -->
+              <div>
+                <textarea id="messageInput" rows="4" placeholder="الرسالة" class="custom-input resize-y"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" class="btn-submit-navy shadow-md">
+                  ارسال
+                </button>
+              </div>
+
+            </form>
+          </div>
+
         </div>
       </div>
 
@@ -148,76 +184,6 @@
     </div>
   </section>
 
-  <!-- FORM SECTION (Exact replica of the provided design screenshot) -->
-  <section id="form-section" class="form-section-bg py-16 sm:py-20 border-t border-b border-slate-300">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        
-        <!-- Right Side: Headline Text (as requested by user) -->
-        <div class="lg:col-span-6 space-y-4 text-right">
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E48] leading-snug">
-            سجل بياناتك واحصل على عرض سعر مجانى وزيارة لرفع المقاسات مجانا
-          </h2>
-        </div>
-
-        <!-- Left Side: Form Controls -->
-        <div class="lg:col-span-6">
-          <form id="contactForm" class="space-y-4">
-            
-            <!-- Input 1: Name -->
-            <div>
-              <input type="text" id="nameInput" placeholder="الاسم" class="custom-input" required>
-            </div>
-
-            <!-- Input 2: Email -->
-            <div>
-              <input type="email" id="emailInput" placeholder="البريد" class="custom-input">
-            </div>
-
-            <!-- Input 3: Phone -->
-            <div>
-              <input type="tel" id="phoneInput" placeholder="الهاتف" class="custom-input" required>
-            </div>
-
-            <!-- Radio Options: Request Type -->
-            <div class="py-2 flex flex-wrap items-center gap-6 text-sm sm:text-base font-semibold text-slate-700">
-              <label class="flex items-center gap-2 cursor-pointer">
-                <input type="radio" name="request_type" value="استفسارات الأعمال" class="custom-radio">
-                <span>استفسارات الأعمال</span>
-              </label>
-
-              <label class="flex items-center gap-2 cursor-pointer">
-                <input type="radio" name="request_type" value="عرض سعر" class="custom-radio" checked>
-                <span>عرض سعر</span>
-              </label>
-
-              <label class="flex items-center gap-2 cursor-pointer">
-                <input type="radio" name="request_type" value="توظيف" class="custom-radio">
-                <span>توظيف</span>
-              </label>
-            </div>
-
-            <!-- Textarea: Message -->
-            <div>
-              <textarea id="messageInput" rows="4" placeholder="الرسالة" class="custom-input resize-y"></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <div>
-              <button type="submit" class="btn-submit-navy shadow-md">
-                ارسال
-              </button>
-            </div>
-
-          </form>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer id="about" class="bg-[#06112C] text-slate-300 py-12 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -234,8 +200,8 @@
           <h4 class="text-white font-bold mb-4">روابط سريعة</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="#hero" class="hover:text-white transition-colors">الرئيسية</a></li>
-            <li><a href="#services" class="hover:text-white transition-colors">خدماتنا</a></li>
             <li><a href="#form-section" class="hover:text-white transition-colors">اطلب عرض سعر</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">خدماتنا</a></li>
           </ul>
         </div>
 
@@ -243,12 +209,8 @@
           <h4 class="text-white font-bold mb-4">تواصل معنا</h4>
           <ul class="space-y-3 text-sm">
             <li class="flex items-center gap-3">
-              <i class="fa-solid fa-phone text-blue-400"></i>
-              <span>هاتف: 01000000000</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
-              <span>واتساب: 01000000000</span>
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+              <span>واتساب: <a href="https://wa.me/966552035710" target="_blank" class="hover:underline text-emerald-300 font-mono">966552035710+</a></span>
             </li>
             <li class="flex items-center gap-3">
               <i class="fa-solid fa-envelope text-blue-400"></i>
@@ -271,7 +233,7 @@
   </footer>
 
   <!-- FLOATING WHATSAPP BUTTON (ON THE BOTTOM RIGHT - أسفل الشاشة على اليمين) -->
-  <a href="https://wa.me/201000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%88%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9%20%D9%84%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%D8%A7%D8%AA" 
+  <a href="https://wa.me/966552035710?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%GA%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%88%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9%20%D9%84%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%D8%A7%D8%AA" 
      target="_blank" 
      rel="noopener noreferrer" 
      class="whatsapp-float group" 
@@ -280,7 +242,7 @@
     <i class="fa-brands fa-whatsapp"></i>
     <!-- Tooltip -->
     <span class="absolute right-16 top-1/2 -translate-y-1/2 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
-      تواصل معنا على الواتساب
+      تواصل معنا على الواتساب (+966552035710)
     </span>
   </a>
 
