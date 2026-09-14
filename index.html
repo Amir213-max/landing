@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>العصر الصناعي - احصل على عرض سعر وزيارة مجانية لرفع المقاسات</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- Toast Popup -->
+  <div id="toastPopup" class="toast-popup flex items-center gap-3">
+    <i class="fa-solid fa-circle-check text-green-400 text-xl"></i>
+    <span id="toastMessage">تم إرسال طلبك بنجاح!</span>
+  </div>
+
+  <!-- Header / Navigation Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2">
+        <img src="assets/images/logo.png" alt="شعار العصر الصناعي" class="logo-img">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-700">
+        <a href="#hero" class="hover:text-[#0B1E48] transition-colors">الرئيسية</a>
+        <a href="#services" class="hover:text-[#0B1E48] transition-colors">خدماتنا</a>
+        <a href="#about" class="hover:text-[#0B1E48] transition-colors">عن الشركة</a>
+        <a href="#form-section" class="hover:text-[#0B1E48] transition-colors">طلب عرض سعر</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-4">
+        <a href="#form-section" class="bg-[#0B1E48] hover:bg-[#06112C] text-white px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-md hover:shadow-lg">
+          احصل على عرض سعر
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative bg-gradient-to-b from-slate-100 to-slate-50 py-16 md:py-24 border-b border-slate-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-7 space-y-6 text-right">
+        <div class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-[#0B1E48] px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold">
+          <i class="fa-solid fa-award text-yellow-500"></i> الجودة والابتكار في الخدمات الصناعية
+        </div>
+        
+        <h1 class="text-3xl sm:text-5xl font-black text-[#0B1E48] leading-tight">
+          شركة <span class="text-blue-700">العصر الصناعي</span> <br>
+          حلول صناعية متكاملة بأعلى معايير الجودة
+        </h1>
+        
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl">
+          نقدم أحدث الحلول والمنتجات الصناعية المتطورة مع التزام تام بالدقة والسرعة. تواصل معنا الآن واحصل على زيارة مجانية لرفع المقاسات وعرض سعر مخصص لمشروعك.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="#form-section" class="bg-[#0B1E48] hover:bg-[#06112C] text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all shadow-lg hover:shadow-xl flex items-center gap-3">
+            <i class="fa-solid fa-clipboard-list"></i>
+            اطلب عرض السعر الآن
+          </a>
+          <a href="https://wa.me/201000000000" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3.5 rounded-xl font-bold text-base transition-all shadow-lg flex items-center gap-3">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            محادثة واتساب مباشرة
+          </a>
+        </div>
+
+        <!-- Features Badges -->
+        <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200/80 max-w-xl">
+          <div class="text-center md:text-right">
+            <p class="text-2xl font-extrabold text-[#0B1E48]">100%</p>
+            <p class="text-xs text-slate-500 font-semibold">ضمان الجودة</p>
+          </div>
+          <div class="text-center md:text-right">
+            <p class="text-2xl font-extrabold text-[#0B1E48]">مجاناً</p>
+            <p class="text-xs text-slate-500 font-semibold">زيارة رفع المقاسات</p>
+          </div>
+          <div class="text-center md:text-right">
+            <p class="text-2xl font-extrabold text-[#0B1E48]">24/7</p>
+            <p class="text-xs text-slate-500 font-semibold">دعم واستشارات</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-full max-w-md bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex flex-col items-center">
+          <img src="assets/images/logo.png" alt="العصر الصناعي" class="h-28 w-auto mb-6 object-contain">
+          <div class="bg-slate-50 p-5 rounded-xl border border-slate-100 w-full text-center space-y-3">
+            <i class="fa-solid fa-truck-ramp-box text-3xl text-[#0B1E48]"></i>
+            <h3 class="font-bold text-slate-800 text-lg">خدمات صناعية متكاملة</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">خبرة واسعة في تنفيذ وتسليم المشاريع الصناعية بدقة واحترافية.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <h2 class="text-3xl font-extrabold text-[#0B1E48]">خدماتنا ومجالات العمل</h2>
+        <p class="text-slate-600">نوفر مجموعة واسعة من الخيارات والحلول الصناعية المصممة لتلبية احتياجات كافة المشاريع.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/70 hover:shadow-xl transition-all group">
+          <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-[#0B1E48] mb-6 group-hover:bg-[#0B1E48] group-hover:text-white transition-colors">
+            <i class="fa-solid fa-industry text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">التوريدات والتصنيع</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">توريد وتصنيع أحدث المنتجات والمكونات الصناعية وفق أعلى معايير السلامة والجودة العالمية.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/70 hover:shadow-xl transition-all group">
+          <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-[#0B1E48] mb-6 group-hover:bg-[#0B1E48] group-hover:text-white transition-colors">
+            <i class="fa-solid fa-ruler-combined text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">رفع المقاسات الميدانية</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">فريق مهندسين متكامل لزيارة الموقع ورفع المقاسات بدقة متناهية لضمان المطابقة الكاملة للمواصفات.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/70 hover:shadow-xl transition-all group">
+          <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-[#0B1E48] mb-6 group-hover:bg-[#0B1E48] group-hover:text-white transition-colors">
+            <i class="fa-solid fa-headset text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">استشارات وعروض أسعار</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">دعم فني واستشارات متخصصة ومساعدتكم في اختيار أفضل الحلول المناسبة لميزانيتكم.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM SECTION (Exact replica of the provided design screenshot) -->
+  <section id="form-section" class="form-section-bg py-16 sm:py-20 border-t border-b border-slate-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Right Side: Headline Text (as requested by user) -->
+        <div class="lg:col-span-6 space-y-4 text-right">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0B1E48] leading-snug">
+            سجل بياناتك واحصل على عرض سعر مجانى وزيارة لرفع المقاسات مجانا
+          </h2>
+        </div>
+
+        <!-- Left Side: Form Controls -->
+        <div class="lg:col-span-6">
+          <form id="contactForm" class="space-y-4">
+            
+            <!-- Input 1: Name -->
+            <div>
+              <input type="text" id="nameInput" placeholder="الاسم" class="custom-input" required>
+            </div>
+
+            <!-- Input 2: Email -->
+            <div>
+              <input type="email" id="emailInput" placeholder="البريد" class="custom-input">
+            </div>
+
+            <!-- Input 3: Phone -->
+            <div>
+              <input type="tel" id="phoneInput" placeholder="الهاتف" class="custom-input" required>
+            </div>
+
+            <!-- Radio Options: Request Type -->
+            <div class="py-2 flex flex-wrap items-center gap-6 text-sm sm:text-base font-semibold text-slate-700">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="request_type" value="استفسارات الأعمال" class="custom-radio">
+                <span>استفسارات الأعمال</span>
+              </label>
+
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="request_type" value="عرض سعر" class="custom-radio" checked>
+                <span>عرض سعر</span>
+              </label>
+
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="request_type" value="توظيف" class="custom-radio">
+                <span>توظيف</span>
+              </label>
+            </div>
+
+            <!-- Textarea: Message -->
+            <div>
+              <textarea id="messageInput" rows="4" placeholder="الرسالة" class="custom-input resize-y"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button type="submit" class="btn-submit-navy shadow-md">
+                ارسال
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="about" class="bg-[#06112C] text-slate-300 py-12 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-slate-800">
+        
+        <div class="space-y-4 md:col-span-2">
+          <img src="assets/images/logo.png" alt="العصر الصناعي" class="h-14 bg-white/90 p-2 rounded-lg object-contain">
+          <p class="text-sm text-slate-400 max-w-md leading-relaxed">
+            العصر الصناعي - شريكك الموثوق في تقديم المنتجات والحلول الصناعية بتميز ودقة متناهية.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">روابط سريعة</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#hero" class="hover:text-white transition-colors">الرئيسية</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">خدماتنا</a></li>
+            <li><a href="#form-section" class="hover:text-white transition-colors">اطلب عرض سعر</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold mb-4">تواصل معنا</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-blue-400"></i>
+              <span>هاتف: 01000000000</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+              <span>واتساب: 01000000000</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-blue-400"></i>
+              <span>البريد: info@alasral-sinai.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <p>© 2026 جميع الحقوق محفوظة لـ شركة العصر الصناعي.</p>
+        <div class="flex items-center gap-4 text-base">
+          <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (ON THE BOTTOM RIGHT - أسفل الشاشة على اليمين) -->
+  <a href="https://wa.me/201000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%88%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9%20%D9%84%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%D8%A7%D8%AA" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="whatsapp-float group" 
+     title="تواصل معنا عبر واتساب">
+    <div class="whatsapp-pulse"></div>
+    <i class="fa-brands fa-whatsapp"></i>
+    <!-- Tooltip -->
+    <span class="absolute right-16 top-1/2 -translate-y-1/2 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+      تواصل معنا على الواتساب
+    </span>
+  </a>
+
+  <!-- Script -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
