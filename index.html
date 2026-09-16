@@ -66,7 +66,7 @@
         </p>
       </div>
 
-      <!-- FORM SECTION (AT THE BEGINNING OF THE PAGE) -->
+      <!-- FORM SECTION (CONNECTED TO info@era-industrial.com) -->
       <div id="form-section" class="form-section-bg p-6 sm:p-10 rounded-3xl shadow-xl border border-slate-300 max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
@@ -79,31 +79,40 @@
               قم بتعبئة النموذج وسيقوم فريقنا المتخصص بالتواصل معك فوراً لتحديد موعد الزيارة المجانية وتقديم أفضل عروض الأسعار.
             </p>
 
-            <div class="pt-4 flex items-center gap-4">
-              <a href="https://wa.me/966552035710" target="_blank" class="inline-flex items-center gap-2 text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-4 py-2 rounded-xl text-sm hover:bg-emerald-100 transition-colors">
+            <div class="pt-4 flex flex-col sm:flex-row gap-3">
+              <a href="https://wa.me/966552035710" target="_blank" class="inline-flex items-center gap-2 text-emerald-700 font-bold bg-emerald-50 border border-emerald-200 px-4 py-2.5 rounded-xl text-sm hover:bg-emerald-100 transition-colors">
                 <i class="fa-brands fa-whatsapp text-lg"></i>
-                أو تواصل معنا مباشرة عبر الواتساب: 966552035710+
+                واتساب مباشر: 966552035710+
+              </a>
+              <a href="mailto:info@era-industrial.com" class="inline-flex items-center gap-2 text-blue-800 font-bold bg-blue-50 border border-blue-200 px-4 py-2.5 rounded-xl text-sm hover:bg-blue-100 transition-colors">
+                <i class="fa-solid fa-envelope text-lg"></i>
+                info@era-industrial.com
               </a>
             </div>
           </div>
 
           <!-- Left Side: Form Controls -->
           <div class="lg:col-span-6">
-            <form id="contactForm" class="space-y-4">
+            <form id="contactForm" action="https://formsubmit.co/info@era-industrial.com" method="POST" class="space-y-4">
               
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_subject" value="طلب جديد من صفحة الهبوط - العصر الصناعي">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+
               <!-- Input 1: Name -->
               <div>
-                <input type="text" id="nameInput" placeholder="الاسم" class="custom-input" required>
+                <input type="text" id="nameInput" name="الاسم" placeholder="الاسم" class="custom-input" required>
               </div>
 
               <!-- Input 2: Email -->
               <div>
-                <input type="email" id="emailInput" placeholder="البريد" class="custom-input">
+                <input type="email" id="emailInput" name="البريد الإلكتروني" placeholder="البريد" class="custom-input">
               </div>
 
               <!-- Input 3: Phone -->
               <div>
-                <input type="tel" id="phoneInput" placeholder="الهاتف" class="custom-input" required>
+                <input type="tel" id="phoneInput" name="الهاتف" placeholder="الهاتف" class="custom-input" required>
               </div>
 
               <!-- Radio Options: Request Type -->
@@ -126,13 +135,13 @@
 
               <!-- Textarea: Message -->
               <div>
-                <textarea id="messageInput" rows="4" placeholder="الرسالة" class="custom-input resize-y"></textarea>
+                <textarea id="messageInput" name="الرسالة والملاحظات" rows="4" placeholder="الرسالة" class="custom-input resize-y"></textarea>
               </div>
 
               <!-- Submit Button -->
               <div>
-                <button type="submit" class="btn-submit-navy shadow-md">
-                  ارسال
+                <button type="submit" class="btn-submit-navy shadow-md flex items-center justify-center gap-2">
+                  <span>ارسال</span>
                 </button>
               </div>
 
@@ -214,7 +223,7 @@
             </li>
             <li class="flex items-center gap-3">
               <i class="fa-solid fa-envelope text-blue-400"></i>
-              <span>البريد: info@alasral-sinai.com</span>
+              <span>البريد: <a href="mailto:info@era-industrial.com" class="hover:underline text-blue-300 font-mono">info@era-industrial.com</a></span>
             </li>
           </ul>
         </div>
@@ -233,7 +242,7 @@
   </footer>
 
   <!-- FLOATING WHATSAPP BUTTON (ON THE BOTTOM RIGHT - أسفل الشاشة على اليمين) -->
-  <a href="https://wa.me/966552035710?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%GA%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%88%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9%20%D9%84%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%D8%A7%D8%AA" 
+  <a href="https://wa.me/966552035710?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%88%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9%20%D9%84%D8%B1%D9%81%D8%B9%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%D8%A7%D8%AA" 
      target="_blank" 
      rel="noopener noreferrer" 
      class="whatsapp-float group" 
