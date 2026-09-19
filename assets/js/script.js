@@ -1,4 +1,4 @@
-// العصر الصناعي - Main JavaScript with FormSubmit Integration
+// العصر الصناعي - Main JavaScript with FormSubmit Integration & GA Event Tracking
 document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contactForm');
   const toastPopup = document.getElementById('toastPopup');
@@ -45,15 +45,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (response.ok) {
+          // Trigger Google Analytics generate_lead event ONLY on successful form submission
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              'event_category': 'form',
+              'event_label': 'contact_form'
+            });
+          }
+
           showToast('تم إرسال طلبك بنجاح وسيتواصل معك فريقنا في أقرب وقت!');
           contactForm.reset();
         } else {
-          // If AJAX response is not ok, submit form natively
+          // If AJAX response is not ok, trigger event & submit form natively
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              'event_category': 'form',
+              'event_label': 'contact_form'
+            });
+          }
           contactForm.submit();
         }
       } catch (err) {
         console.log('Sending via standard form submit fallback...', err);
         // Fallback native submit
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', {
+            'event_category': 'form',
+            'event_label': 'contact_form'
+          });
+        }
         contactForm.submit();
       } finally {
         submitBtn.disabled = false;
